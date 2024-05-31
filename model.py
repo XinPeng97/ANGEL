@@ -133,7 +133,7 @@ class MultiHeadAttention(nn.Module):
         x_k: Tensor, 
         x_v: Tensor, 
         mask: Tensor 
-    ) -> Tensor: # B x N x F -> B x N x F 
+    ) -> Tensor:  
 
         Q = self.linear_q(x_q) 
         K = self.linear_k(x_k) 
